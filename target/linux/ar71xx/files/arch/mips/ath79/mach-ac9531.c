@@ -123,3 +123,4 @@ static void __init ac9531_setup(void)
 }
 
 MIPS_MACHINE(ATH79_MACH_AC9531_010, "AC9531-010", "Atheros AC9531-010 reference board", ac9531_setup);
+MIPS_MACHINE(ATH79_MACH_AC9531_020, "AC9531-020", "Atheros AC9531-020 reference board", ac9531_setup);

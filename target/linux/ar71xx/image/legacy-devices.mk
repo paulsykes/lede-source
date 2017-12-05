@@ -115,6 +115,12 @@ define LegacyDevice/AC9531_010
 endef
 LEGACY_DEVICES += AC9531_010
 
+define LegacyDevice/AC9531_020
+  DEVICE_TITLE := Qualcomm Atheros AC9531-020 reference board
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage kmod-ath10k ath10k-firmware-qca9887
+endef
+LEGACY_DEVICES += AC9531_020
+
 define LegacyDevice/AP152_16M
   DEVICE_TITLE := Qualcomm Atheros AP152 reference board (16MB flash)
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage kmod-ath10k ath10k-firmware-qca988x

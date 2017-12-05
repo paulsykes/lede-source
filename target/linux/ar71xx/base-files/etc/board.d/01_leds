@@ -103,6 +103,7 @@ ap147-010)
 	ucidef_set_led_switch "lan4" "LAN4" "ap147:green:lan4" "switch0" "0x02"
 	ucidef_set_led_wlan "wlan2g" "WLAN 2.4 GHz" "ap147:green:wlan-2g" "phy0tpt"
 	;;
+ac9531-020|\
 ac9531-010)
 	ucidef_set_led_netdev "wan" "WAN" "ac9531:green:wan" "eth1"
 	ucidef_set_led_switch "lan1" "LAN1" "ac9531:green:lan1" "switch0" "0x10"
