@@ -34,7 +34,7 @@
 #define AC9531_GPIO_LED_STATUS	13
 #define AC9531_GPIO_LED_WLAN_2G	12
 
-#define AC9531_GPIO_BTN_WPS	17
+#define AC9531_GPIO_BTN_RESET	17
 
 #define AC9531_KEYS_POLL_INTERVAL	20	/* msecs */
 #define AC9531_KEYS_DEBOUNCE_INTERVAL	(3 * AC9531_KEYS_POLL_INTERVAL)
@@ -75,11 +75,11 @@ static struct gpio_led ac9531_leds_gpio[] __initdata = {
 
 static struct gpio_keys_button ac9531_gpio_keys[] __initdata = {
 	{
-		.desc		= "wps button",
+		.desc		= "Reset button",
 		.type		= EV_KEY,
-		.code		= KEY_WPS_BUTTON,
+		.code		= KEY_RESTART,
 		.debounce_interval = AC9531_KEYS_DEBOUNCE_INTERVAL,
-		.gpio		= AC9531_GPIO_BTN_WPS,
+		.gpio		= AC9531_GPIO_BTN_RESET,
 		.active_low	= 1,
 	}
 };
